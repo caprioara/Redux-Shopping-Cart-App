@@ -40,6 +40,7 @@ const cartSlice = createSlice({
                 existingItem.quantity--
                 existingItem.totalPrice -= existingItem.price
             }
+            state.totalQuantity--
         },
         setShowCart(state) {
             state.showCart = !state.showCart;
